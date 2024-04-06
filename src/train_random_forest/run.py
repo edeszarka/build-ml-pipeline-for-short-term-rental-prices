@@ -102,8 +102,8 @@ def go(args):
 
     signature = mlflow.models.infer_signature(
         X_val, y_pred
-    )  # generate_signature_output(sk_pipe,X_val)) #y_pred)
-
+    )
+    
     mlflow.sklearn.save_model(
         sk_pipe,
         export_path,
